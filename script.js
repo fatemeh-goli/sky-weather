@@ -33,7 +33,6 @@ let backgroundImages = [
   "./Snow.jpg",
   "./sunny (2).jpg",
   "./Sunny weather.jpg",
-  "./sunny.jpg",
   "./suuny and cloudy.jpg",
   "./The Moon and the Forest.jpg",
   "./Wave.jpg",
