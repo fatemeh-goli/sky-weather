@@ -40,14 +40,14 @@ let backgroundImages = [
 ];
 
 let mobileBackgroundImages = [
-  "images/mobile/cloudy.jpg",
-  "images/mobile/rainy.jpg",
-  "images/mobile/sea.jpeg",
-  "images/mobile/Street.jpeg",
-  "images/mobile/sunny.jpg",
-  "images/mobile/suuny and rainy.jpg",
-  "images/mobile/tree.jpeg",
-  "images/mobile/Wave.jpeg",
+  "./cloudy.jpg",
+  "./rainy.jpg",
+  "./sea.jpeg",
+  "./Street.jpeg",
+  "./sunny.jpg",
+  "./suuny and rainy.jpg",
+  "./tree.jpeg",
+  "./Wave.jpeg",
 ];
 
 function changeBackgroundImage() {
