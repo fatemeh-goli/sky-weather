@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: "Redaction10-bold";
+    src: url("./font/Redaction10-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-family: "Redaction10-bold", sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#weather-container {
+    width: 90%;
+    max-width: 400px;
+    min-height: 200px;
+    padding: 15px;
+    background: #8fb7c9;
+    box-shadow: 0 10px 30px rgba(82, 109, 104, 0.78);
+    border-radius: 10px;
+}
+
+#weather-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f2a44;
+    letter-spacing: 1px;
+}
+
+#search-label {
+    display: block;
+    color: #355c7d;
+    font-size: 15px;
+}
+
+#city-search {
+    margin-top: 10px;
+    width: calc(100% - 40px);
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #f4efea;
+    vertical-align: middle;
+}
+
+#city-search::placeholder {
+    color: #355c7d;
+}
+
+#city-search:focus {
+    outline: 2px solid #D9E0D8;
+    outline-offset: 1px;
+}
+
+#search-button {
+    width: 27px;
+    height: 27px;
+    position: static;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#loading-message {
+    margin-top: 8px;
+    margin-left: 5px;
+    color: #f4efea;
+    font-size: 14px;
+}
+
+#city-name-info {
+    color: #253353;
+    margin-top: 15px;
+    display: none;
+}
+
+#temperature-info {
+    color: #355c7d;
+    display: none;
+}
+
+#weather-info {
+    color: #355c7d;
+    display: none;
+}
+
+#wind-speed-info {
+    color: #355c7d;
+    display: none;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    #weather-container {
+        padding: 14px;
+    }
+
+    #weather-title {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    #search-label {
+        font-size: 14px;
+    }
+
+    #loading-message {
+        font-size: 13px;
+    }
+}
